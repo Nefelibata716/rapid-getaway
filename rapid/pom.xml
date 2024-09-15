@@ -12,6 +12,7 @@
         <module>rapid-core</module>
         <module>rapid-client</module>
         <module>rapid-common</module>
+        <module>rapid-console</module>
     </modules>
 
     <properties>
@@ -51,6 +52,48 @@
     <dependencyManagement>
         <dependencies>
             <!-- 网络依赖 -->
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-console</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-discovery</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-discovery-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-discovery-etcd</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gl.repid</groupId>
+                <artifactId>rapid-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
